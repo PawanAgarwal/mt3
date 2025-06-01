@@ -2,6 +2,7 @@
 venv/
 env/
 ENV/
+mt3/colab/mt3_tmp
 
 # Python bytecode
 __pycache__/
