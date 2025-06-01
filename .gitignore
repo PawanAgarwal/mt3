@@ -13,6 +13,7 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+.eggs/
 
 # IDE specific files
 .idea/
