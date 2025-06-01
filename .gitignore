@@ -25,6 +25,9 @@ build/
 # Environment variables
 .env
 
+# Git
+.gitignore
+
 # OS specific
 .DS_Store
 Thumbs.db 
