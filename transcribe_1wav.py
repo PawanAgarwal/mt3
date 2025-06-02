@@ -8,6 +8,7 @@ de-duplication.
 """
 
 from pathlib import Path
+from importlib import resources
 import functools
 import numpy as np
 import pandas as pd
@@ -38,10 +39,10 @@ class InferenceModel:
         else:
             raise ValueError(f"unknown model_type: {model_type}")
 
-        script_dir = Path(__file__).resolve().parent
+        gin_dir = resources.files("mt3") / "gin"
         gin_files = [
-            str(script_dir / "mt3" / "gin" / "model.gin"),
-            str(script_dir / "mt3" / "gin" / f"{model_type}.gin"),
+            str(gin_dir / "model.gin"),
+            str(gin_dir / f"{model_type}.gin"),
         ]
 
         self.batch_size = 8
