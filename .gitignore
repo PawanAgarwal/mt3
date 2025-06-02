@@ -1,4 +1,3 @@
-
 __pycache__/
 .DS_Store
 .eggs/
@@ -32,3 +31,8 @@ temp_changes.txt
 Thumbs.db checkpoints/
 venv/
 checkpoints/*
+
+# Generated files
+mt3/colab/transcribed.mid
+mt3/colab/transcription_notes.csv
+output.png
